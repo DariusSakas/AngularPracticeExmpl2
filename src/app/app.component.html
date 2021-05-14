@@ -49,3 +49,21 @@
     {{ idx + 1 }}<strong>{{ number }}</strong>
   </li>
 </ul>
+<hr />
+<ul style="list-style: none">
+  <li *ngFor="let post of objs">
+    <p>
+      {{ post.title }} <b>{{ post.author }}</b>
+    </p>
+    <ul>
+      <li *ngFor="let comment of post.comments">
+        <div>
+          <small>{{ comment.name }}</small>
+          <p>{{ comment.text }}</p>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+<hr />
+<p>{{ myDateNow | date | uppercase }}</p>

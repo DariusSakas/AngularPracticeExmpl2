@@ -20,19 +20,21 @@ export class AppComponent {
       title: 'Post1',
       author: 'Kebab1',
       comments: [
-        { name: 'Me', text: 'lorem' },
-        { name: 'Me', text: 'lorem' },
-        { name: 'Me', text: 'lorem' },
+        { name: 'Me11', text: 'lorem' },
+        { name: 'Me12', text: 'lorem' },
+        { name: 'Me13', text: 'lorem' },
       ],
     },
     {
       title: 'Post2',
       author: 'Kebab2',
       comments: [
-        { name: 'Me2', text: 'lorem2' },
-        { name: 'Me2', text: 'lorem2' },
-        { name: 'Me2', text: 'lorem2' },
+        { name: 'Me21', text: 'lorem2' },
+        { name: 'Me22', text: 'lorem2' },
+        { name: 'Me23', text: 'lorem2' },
       ],
     },
   ];
+
+  myDateNow: Date = new Date();
 }
